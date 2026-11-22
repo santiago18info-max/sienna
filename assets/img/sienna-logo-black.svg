@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 36 761 232" role="img" aria-label="SIENNA">
+  <!-- Versión web del logo SIENNA (original en originales/). Cada letra tiene ancho fijo
+       (textLength) para que el logo se vea igual aunque la tipografía Bonny no esté instalada.
+       Ideal: reemplazar por una exportación con el texto convertido a contornos. -->
+  <style>text{font-family:Bonny-Regular,Bonny,"Bodoni MT",Didot,"Times New Roman",serif;font-size:300px;fill:#1d1d1b}</style>
+  <text x="0"   y="262.16" textLength="108" lengthAdjust="spacingAndGlyphs">S</text>
+  <path fill="#1d1d1b" d="M142.78,65c2.19,67.54.2,129,18.32,197.13H116.37c18-66.77,14.68-128.7,17-197.13Z"/>
+  <ellipse fill="#1d1d1b" cx="138.73" cy="55.33" rx="15.73" ry="15.71"/>
+  <text x="171" y="262.16" textLength="124" lengthAdjust="spacingAndGlyphs">E</text>
+  <text x="307" y="262.16" textLength="138" lengthAdjust="spacingAndGlyphs">N</text>
+  <text x="456" y="262.16" textLength="140" lengthAdjust="spacingAndGlyphs">N</text>
+  <text x="606" y="262.16" textLength="155" lengthAdjust="spacingAndGlyphs">A</text>
+</svg>

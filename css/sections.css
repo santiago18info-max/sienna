@@ -1,0 +1,121 @@
+/* =========================================================
+   SIENNA — Secciones de la página (en orden de aparición)
+   Hero · Manifiesto · Quiénes somos · Tecnología ·
+   Colección · Feature editorial · Contacto
+   ========================================================= */
+
+/* 1. Hero */
+.hero {
+  min-height: min(760px, calc(100vh - var(--header-h)));
+  display: grid; grid-template-columns: 1fr 1fr; position: relative;
+  overflow: hidden; background: var(--paper);
+}
+.hero-copy {
+  padding: clamp(50px, 8vw, 120px) 5vw clamp(50px, 7vw, 100px) var(--page-pad);
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+  position: relative; z-index: 2;
+}
+.hero-copy .eyebrow { margin-bottom: 35px; }
+.hero h1 {
+  font-size: clamp(58px, 8.5vw, 132px); line-height: .82; letter-spacing: -.065em;
+  font-weight: 300; margin: 0 0 32px;
+}
+.hero h1 em { font-style: normal; font-family: var(--serif); font-weight: 400; }
+.hero-intro { max-width: 310px; font-size: 13px; line-height: 1.8; color: #5f5b57; margin: 0 0 30px; }
+.hero-image { min-height: 600px; position: relative; overflow: hidden; }
+.hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.hero-image::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(244,242,239,.12), transparent 40%);
+  pointer-events: none;
+}
+.hero-index {
+  position: absolute; bottom: 26px; right: var(--page-pad); z-index: 2;
+  font-size: 9px; letter-spacing: .18em; color: white; mix-blend-mode: difference;
+}
+.hero-mark {
+  position: absolute; width: 100px; height: 100px; border-radius: 50%;
+  border: 1px solid rgba(148,128,187,.65); left: 47%; top: 18%;
+  transform: translate(-50%, -50%); z-index: 2; pointer-events: none;
+}
+.hero-mark::after {
+  content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%;
+  background: var(--lavender); top: 10px; right: 14px;
+}
+.scroll-note {
+  position: absolute; left: var(--page-pad); bottom: 25px; display: flex;
+  gap: 12px; align-items: center; font-size: 9px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--gray);
+}
+.scroll-note i { width: 35px; height: 1px; background: var(--violet); }
+
+/* 2. Manifiesto */
+.manifesto {
+  padding: clamp(100px, 15vw, 220px) var(--page-pad);
+  display: grid; grid-template-columns: 1fr 2fr; gap: 6vw;
+}
+.manifesto .section-label { align-self: start; margin-top: 13px; }
+.manifesto h2 {
+  font-size: clamp(38px, 6.4vw, 94px); line-height: .98; letter-spacing: -.045em;
+  font-weight: 300; margin: 0; max-width: 900px;
+}
+.manifesto h2 span { font-family: var(--serif); font-style: italic; }
+.manifesto-bottom {
+  grid-column: 2; display: flex; justify-content: space-between; align-items: end;
+  gap: 30px; margin-top: 40px;
+}
+.manifesto-bottom p { max-width: 340px; font-size: 12px; line-height: 1.8; color: var(--gray); margin: 0; }
+
+/* 3. Quiénes somos */
+.about { padding: 0 var(--page-pad) clamp(100px, 14vw, 190px); }
+.about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 9vw; align-items: center; }
+.about-image-wrap { position: relative; }
+.about-image { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(100%); }
+.image-caption {
+  position: absolute; bottom: -24px; right: 0; font-size: 9px;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--gray);
+}
+.about-copy { max-width: 460px; }
+.about-copy .section-label { margin-bottom: 34px; }
+.about-copy h2 { font-size: clamp(40px, 5vw, 72px); line-height: .95; font-weight: 300; letter-spacing: -.04em; margin: 0 0 30px; }
+.about-copy h2 em { font-family: var(--serif); font-weight: 400; }
+.about-copy p { max-width: 360px; font-size: 12px; line-height: 1.9; color: var(--gray); margin: 0 0 28px; }
+
+/* 4. Tecnología */
+.technology { background: var(--black); color: var(--white); padding: clamp(90px, 12vw, 170px) var(--page-pad); }
+.tech-head { display: flex; justify-content: space-between; align-items: start; gap: 40px; margin-bottom: 70px; }
+.tech-head h2 { font-size: clamp(42px, 7vw, 100px); line-height: .9; font-weight: 300; letter-spacing: -.05em; margin: 0; }
+.tech-head h2 em { font-family: var(--serif); font-weight: 400; color: var(--lavender); }
+.tech-head p { width: 230px; font-size: 11px; line-height: 1.8; color: #aaa6a2; margin: 0; }
+.tech-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: #383735; border: 1px solid #383735; }
+.tech-card { background: var(--black); padding: 28px 25px 34px; min-height: 250px; display: flex; flex-direction: column; }
+.tech-card .number { color: var(--lavender); font-size: 10px; letter-spacing: .15em; }
+.tech-card h3 { font-size: 23px; font-weight: 300; margin: auto 0 15px; letter-spacing: -.02em; }
+.tech-card p { font-size: 11px; line-height: 1.8; color: #aaa6a2; max-width: 260px; margin: 0; }
+
+/* Emblema de la marca (círculos concéntricos) */
+.tech-emblem { margin: 70px 0 0 auto; width: min(350px, 60vw); aspect-ratio: 1; }
+
+/* 5. Colección */
+.collection { padding: clamp(100px, 13vw, 180px) var(--page-pad); }
+.collection-header { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 50px; }
+.collection-header h2 { font-size: clamp(44px, 7vw, 100px); line-height: .9; font-weight: 300; letter-spacing: -.05em; margin: 20px 0 0; }
+.collection-header h2 em { font-family: var(--serif); }
+.collection-header p { max-width: 260px; font-size: 11px; line-height: 1.8; color: var(--gray); }
+
+/* 6. Feature editorial */
+.feature { display: grid; grid-template-columns: 1fr 1fr; min-height: 600px; }
+.feature-image { min-height: 500px; }
+.feature-image img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); }
+.feature-copy { padding: clamp(45px, 8vw, 110px); display: flex; flex-direction: column; justify-content: center; background: var(--paper); }
+.feature-copy h2 { font-size: clamp(42px, 6vw, 84px); line-height: .9; letter-spacing: -.045em; font-weight: 300; margin: 30px 0; }
+.feature-copy h2 em { font-family: var(--serif); }
+.feature-copy p { max-width: 350px; font-size: 12px; line-height: 1.9; color: var(--gray); margin: 0 0 25px; }
+
+/* 7. Contacto */
+.contact { padding: clamp(90px, 12vw, 170px) var(--page-pad); text-align: center; }
+.contact .section-label { justify-content: center; }
+.contact h2 { font-size: clamp(50px, 10vw, 140px); font-weight: 300; line-height: .85; letter-spacing: -.06em; margin: 30px 0; }
+.contact h2 em { font-family: var(--serif); }
+.contact p { font-size: 11px; color: var(--gray); line-height: 1.8; margin: 0 auto 25px; max-width: 350px; }
+.contact .btn { margin: 0 auto; }

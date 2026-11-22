@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="26 40 225 225">
+  <!-- Favicon: la gota de la "I" del logo SIENNA -->
+  <rect x="26" y="40" width="225" height="225" rx="40" fill="#fbfaf8"/>
+  <path fill="#1d1d1b" d="M142.78,65c2.19,67.54.2,129,18.32,197.13H116.37c18-66.77,14.68-128.7,17-197.13Z" transform="translate(138.73 152) scale(.92) translate(-138.73 -152)"/>
+  <ellipse fill="#1d1d1b" cx="138.73" cy="55.33" rx="15.73" ry="15.71" transform="translate(138.73 152) scale(.92) translate(-138.73 -152)"/>
+</svg>
