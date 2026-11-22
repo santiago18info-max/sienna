@@ -20,10 +20,10 @@ window.SIENNA_PRODUCTS = [
   {
     tag: '02 / Shampoo',
     title: 'Shampoo',
-    subtitle: 'Nombre e imagen provisorios',
+    subtitle: 'Tratamiento para cabello químicamente tratado',
     category: 'shampoo',
     description: 'Descripción provisoria del shampoo de la línea [peptide complex]. Reemplazar por la información definitiva del producto.',
-    image: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85'
+    image: 'assets/img/hero-shampoo.jpg'
   },
   {
     tag: '03 / Serum',
