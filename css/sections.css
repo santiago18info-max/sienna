@@ -54,7 +54,9 @@
   padding: clamp(100px, 15vw, 220px) var(--page-pad);
   display: grid; grid-template-columns: 1fr 2fr; gap: 6vw;
 }
-.manifesto .section-label { align-self: start; margin-top: 13px; }
+.manifesto-aside { align-self: start; margin-top: 13px; }
+/* Emblema de la marca debajo del rótulo de la sección */
+.manifesto-emblem { width: min(100%, 340px); aspect-ratio: 1; margin-top: clamp(40px, 6vw, 90px); }
 .manifesto h2 {
   font-size: clamp(38px, 6.4vw, 94px); line-height: .98; letter-spacing: -.045em;
   font-weight: 300; margin: 0; max-width: 900px;
@@ -95,7 +97,6 @@
 .tech-card p { font-size: 11px; line-height: 1.8; color: #aaa6a2; max-width: 260px; margin: 0; }
 
 /* Emblema de la marca (círculos concéntricos) */
-.tech-emblem { margin: 70px 0 0 auto; width: min(350px, 60vw); aspect-ratio: 1; }
 
 /* 5. Colección */
 .collection { padding: clamp(100px, 13vw, 180px) var(--page-pad); }

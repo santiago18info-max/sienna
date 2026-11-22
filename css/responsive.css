@@ -27,6 +27,7 @@
   .scroll-note { display: none; }
   .manifesto { grid-template-columns: 1fr; gap: 35px; padding-top: 100px; padding-bottom: 100px; }
   .manifesto-bottom { grid-column: 1; flex-direction: column; align-items: flex-start; }
+  .manifesto-emblem { width: min(60vw, 280px); margin-top: 40px; }
   .about-grid { grid-template-columns: 1fr; gap: 65px; }
   .about-image-wrap { max-width: 580px; }
   .about-copy { padding-left: 8vw; }
