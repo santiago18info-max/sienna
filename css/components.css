@@ -53,7 +53,7 @@
 .product-card:hover .product-image { transform: scale(1.035); }
 .product-tag {
   position: absolute; top: 15px; left: 15px; font-size: 8px; text-transform: uppercase;
-  letter-spacing: .12em; background: var(--lavender); padding: 7px 9px;
+  letter-spacing: .12em; background: #A393C6; padding: 7px 9px;
 }
 .product-info { padding: 17px 0 0; display: flex; justify-content: space-between; gap: 15px; }
 .product-info h3 { font-size: 14px; font-weight: 400; margin: 0 0 6px; }
