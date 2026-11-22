@@ -10,7 +10,7 @@ sienna-web/
 ├── css/
 │   ├── base.css            Colores, tipografías (:root), reset, utilidades, animaciones
 │   ├── components.css      Botones, header, filtros, tarjetas, modal, footer
-│   ├── sections.css        Estilos de cada sección (hero, manifiesto, tecnología…)
+│   ├── sections.css        Estilos de cada sección (hero, manifiesto, colección…)
 │   └── responsive.css      Ajustes para tablet y celular
 ├── js/
 │   ├── products.js         ← Datos de los productos (editar acá)
@@ -19,7 +19,7 @@ sienna-web/
     └── img/
         ├── sienna-logo-black.svg   Logo (header) — versión web del logo oficial
         ├── sienna-logo-white.svg   Logo (footer) — versión web del logo oficial
-        ├── sienna-emblema.svg      Emblema de círculos (sección Tecnología)
+        ├── sienna-emblema.svg      Emblema de círculos (sección Nuestra filosofía)
         ├── favicon.svg             Ícono de pestaña (la gota de la "I")
         ├── originales/             Archivos tal cual los mandó la diseñadora
         └── products/               Poner acá las fotos de producto
