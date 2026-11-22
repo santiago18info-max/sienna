@@ -4,7 +4,8 @@
    2. Render de productos (desde js/products.js)
    3. Filtros de productos
    4. Modal de detalle
-   5. Animaciones de aparición al hacer scroll
+   5. Menú: sección activa al scrollear
+   6. Animaciones de aparición al hacer scroll
    ========================================================= */
 (function () {
   'use strict';
@@ -123,7 +124,38 @@
     if (mainNav.classList.contains('open')) setMenu(false);
   });
 
-  /* ---------- 5. Reveal on scroll ---------- */
+  /* ---------- 5. Menú: marcar la sección visible ---------- */
+  // Cada sección apunta al link del menú que la representa.
+  const sectionLinks = [
+    { id: 'filosofia',  href: '#filosofia' },
+    { id: 'diversidad', href: '#filosofia' },
+    { id: 'productos',  href: '#productos' },
+    { id: 'contacto',   href: '#contacto' }
+  ]
+    .map(item => ({ el: document.getElementById(item.id), href: item.href }))
+    .filter(item => item.el);
+  const navLinks = mainNav.querySelectorAll('a');
+
+  function updateActiveLink() {
+    const line = window.innerHeight * 0.4;              // línea de referencia: 40% de la pantalla
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+    let current = null;
+    sectionLinks.forEach(item => {
+      if (item.el.getBoundingClientRect().top <= line) current = item.href;
+    });
+    if (atBottom && sectionLinks.length) current = sectionLinks[sectionLinks.length - 1].href;
+    navLinks.forEach(link => {
+      const isActive = link.getAttribute('href') === current;
+      link.classList.toggle('active', isActive);
+      if (isActive) link.setAttribute('aria-current', 'true'); else link.removeAttribute('aria-current');
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
+  window.addEventListener('resize', updateActiveLink);
+  updateActiveLink();
+
+  /* ---------- 6. Reveal on scroll ---------- */
   const revealElements = document.querySelectorAll('.reveal');
 
   if ('IntersectionObserver' in window) {

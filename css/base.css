@@ -11,6 +11,7 @@
   --line: rgba(17, 17, 16, .16);
   --lavender: #C2B8DC;
   --violet: #9480BB;
+  --accent: #A393C6;   /* lila de la marca: etiquetas y menú activo */
   --serif: "Bodoni MT", "Didot", "Times New Roman", serif;
   --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --body: "Gelasio", Georgia, "Times New Roman", serif; /* cuerpo de texto */

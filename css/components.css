@@ -32,6 +32,10 @@
   background: var(--violet); transition: width .25s ease;
 }
 .nav a:hover::after { width: 100%; }
+/* Sección visible al scrollear (lo marca js/main.js) */
+.nav a { transition: color .3s ease; }
+.nav a.active { color: var(--accent); }
+.nav a.active::after { width: 100%; background: var(--accent); }
 .header-right { justify-self: end; display: flex; gap: 22px; align-items: center; }
 .menu-toggle { display: none; border: 0; background: none; cursor: pointer; }
 
@@ -53,7 +57,7 @@
 .product-card:hover .product-image { transform: scale(1.035); }
 .product-tag {
   position: absolute; top: 15px; left: 15px; font-size: 8px; text-transform: uppercase;
-  letter-spacing: .12em; background: #A393C6; padding: 7px 9px;
+  letter-spacing: .12em; background: var(--accent); padding: 7px 9px;
 }
 .product-info { padding: 17px 0 0; display: flex; justify-content: space-between; gap: 15px; }
 .product-info h3 { font-size: 14px; font-weight: 400; margin: 0 0 6px; }
