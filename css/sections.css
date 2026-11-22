@@ -60,6 +60,7 @@
   font-weight: 300; margin: 0; max-width: 900px;
 }
 .manifesto h2 span { font-family: var(--serif); font-style: italic; }
+.manifesto h2 strong { font-weight: 600; }
 .manifesto-bottom {
   grid-column: 2; display: flex; justify-content: space-between; align-items: end;
   gap: 30px; margin-top: 40px;

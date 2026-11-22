@@ -1,4 +1,4 @@
-# SIENNA — Molecular Care (web)
+# SIENNA — [peptide complex] (web)
 
 Sitio estático (HTML + CSS + JS, sin dependencias). Se abre directo con doble clic en `index.html`.
 

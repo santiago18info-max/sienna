@@ -45,7 +45,7 @@
 .filter-btn:hover, .filter-btn.active { background: var(--black); color: white; border-color: var(--black); }
 
 /* Tarjeta de producto */
-.products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .product-card { min-width: 0; }
 .product-card[hidden] { display: none; }
 .product-image-wrap { background: var(--paper); overflow: hidden; position: relative; }

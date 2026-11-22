@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SIENNA Molecular Care — tecnología, innovación y diversidad en el cuidado capilar.">
-  <title>SIENNA — Molecular Care</title>
+  <meta name="description" content="SIENNA [peptide complex] — tecnología, innovación y diversidad en el cuidado capilar.">
+  <title>SIENNA — [peptide complex]</title>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Tipografía: Gelasio para cuerpo de texto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,500;1,400&display=swap">
 
   <!-- Estilos (en orden: base → componentes → secciones → responsive) -->
   <link rel="stylesheet" href="css/base.css">
@@ -22,10 +27,10 @@
     <nav class="nav" id="mainNav" aria-label="Navegación principal">
       <a href="#filosofia">Nosotros</a>
       <a href="#tecnologia">Tecnología</a>
-      <a href="#productos">Molecular Care</a>
+      <a href="#productos">[peptide complex]</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <div class="header-right"><span>Hair science / 01</span></div>
+    <div class="header-right"><span>Professional haircare</span></div>
     <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">
       <span id="menuLabel">Menú</span><span aria-hidden="true">☰</span>
     </button>
@@ -35,8 +40,8 @@
     <!-- 1. HERO — FOTO PROVISORIA: reemplazar por imagen de laboratorio/gotero -->
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <span class="eyebrow reveal">Molecular care · Hair science</span>
-        <h1 class="reveal reveal-delay">The science<br>of <em>hair.</em></h1>
+        <span class="eyebrow reveal">[peptide complex] · Hair science</span>
+        <h1 class="reveal reveal-delay">La ciencia<br>de la <em>fibra.</em></h1>
         <p class="hero-intro reveal reveal-delay">Tecnología molecular y cuidado capilar. Una nueva mirada sobre la ciencia, la belleza y la identidad.</p>
         <a class="btn reveal reveal-delay" href="#filosofia"><span>Descubrí SIENNA</span><span>↘</span></a>
       </div>
@@ -52,9 +57,9 @@
     <section class="manifesto" id="filosofia">
       <div class="section-label reveal">01 / Nuestra filosofía</div>
       <div>
-        <h2 class="reveal">La belleza no es una fórmula. Es una <span>posibilidad.</span></h2>
+        <h2 class="reveal">El poder de la <span>belleza</span>, desde su origen <strong>molecular</strong>.</h2>
         <div class="manifesto-bottom reveal">
-          <p>SIENNA nace en el encuentro entre la investigación cosmética, la expresión individual y la diversidad. Una visión donde la tecnología acompaña, sin definir, la identidad de cada cabello.</p>
+          <p>En SIENNA creemos en una belleza que nace del conocimiento y se expresa con fuerza. Nuestra visión combina investigación cosmética e innovación molecular para desarrollar tratamientos que potencian la calidad del cabello y revelan su máximo potencial. Una búsqueda constante de precisión, excelencia y transformación, donde la ciencia impulsa la belleza y cada resultado expresa su poder.</p>
           <a class="btn" href="#diversidad"><span>Conocé nuestra visión</span><span>↘</span></a>
         </div>
       </div>
@@ -70,8 +75,8 @@
         </div>
         <div class="about-copy reveal reveal-delay">
           <span class="section-label">02 / Quiénes somos</span>
-          <h2>Una ciencia.<br><em>Muchas identidades.</em></h2>
-          <p>Creemos que cada cabello tiene su propia historia. Por eso, nuestra visión de la belleza parte de la diversidad: diferentes texturas, formas, experiencias y maneras de expresarse.</p>
+          <h2>Una presencia<br><em>que deja huella.</em></h2>
+          <p>SIENNA representa una nueva forma de entender el lujo: una elección consciente, una expresión de carácter y una manera de habitar la propia belleza con seguridad. Nos inspira la mujer que reconoce su valor, que construye su identidad con determinación y que no necesita ajustarse a expectativas para destacar. Más que acompañar una rutina, SIENNA busca formar parte de una actitud: la de quienes hacen de su presencia una declaración.</p>
           <a class="btn" href="#tecnologia"><span>Una mirada diferente</span><span>↘</span></a>
         </div>
       </div>
@@ -112,16 +117,17 @@
       <div class="collection-header reveal">
         <div>
           <span class="section-label">04 / La colección</span>
-          <h2>Molecular <em>Care.</em></h2>
+          <h2>[peptide <em>complex</em>]</h2>
         </div>
         <p>Una línea concebida para acompañar el cabello desde la ciencia y el cuidado. Las imágenes de producto son referencias provisionales.</p>
       </div>
 
       <div class="filters reveal" role="group" aria-label="Filtrar productos">
         <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">Todos</button>
-        <button class="filter-btn" type="button" data-filter="repair" aria-pressed="false">Reparación</button>
-        <button class="filter-btn" type="button" data-filter="care" aria-pressed="false">Tratamiento</button>
-        <button class="filter-btn" type="button" data-filter="finish" aria-pressed="false">Finalización</button>
+        <button class="filter-btn" type="button" data-filter="pre-shampoo" aria-pressed="false">01 / Pre-shampoo</button>
+        <button class="filter-btn" type="button" data-filter="shampoo" aria-pressed="false">02 / Shampoo</button>
+        <button class="filter-btn" type="button" data-filter="serum" aria-pressed="false">03 / Serum</button>
+        <button class="filter-btn" type="button" data-filter="mascara" aria-pressed="false">04 / Máscara</button>
       </div>
 
       <div class="products" id="productGrid"></div>
@@ -156,12 +162,12 @@
       <div class="footer-links">
         <a href="#filosofia">Nosotros</a>
         <a href="#tecnologia">Tecnología</a>
-        <a href="#productos">Molecular Care</a>
+        <a href="#productos">[peptide complex]</a>
         <a href="#contacto">Contacto</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© SIENNA Molecular Care</span>
+      <span>© SIENNA [peptide complex]</span>
       <span>Technology · Innovation · Diversity</span>
       <a href="#inicio">Back to top ↑</a>
     </div>
@@ -173,7 +179,7 @@
       <button class="modal-close" id="modalClose" type="button" aria-label="Cerrar">×</button>
       <img id="modalImage" src="" alt="">
       <div class="modal-text">
-        <span class="eyebrow lavender">SIENNA / Molecular Care</span>
+        <span class="eyebrow lavender">SIENNA / [peptide complex]</span>
         <h3 id="modalTitle">Producto</h3>
         <p id="modalDescription">Descripción provisoria del producto.</p>
         <p class="eyebrow">Imagen y descripción editables</p>
