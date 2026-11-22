@@ -12,8 +12,8 @@
   --lavender: #C2B8DC;
   --violet: #9480BB;
   --accent: #A393C6;   /* lila de la marca: etiquetas y menú activo */
-  --serif: "Bodoni MT", "Didot", "Times New Roman", serif;
-  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Tipografías de la marca */
+  --sans: "Switzer", "Helvetica Neue", Helvetica, Arial, sans-serif; /* títulos, menú, etiquetas */
   --body: "Gelasio", Georgia, "Times New Roman", serif; /* cuerpo de texto */
   --page-pad: clamp(20px, 5vw, 76px);
   --header-h: 78px;
@@ -54,7 +54,6 @@ p.eyebrow { font-family: var(--sans); font-weight: 300; }
 .section-label::before {
   content: ""; width: 25px; height: 1px; background: currentColor;
 }
-.serif { font-family: var(--serif); font-weight: 400; }
 .lavender { color: var(--violet); }
 .container { padding-left: var(--page-pad); padding-right: var(--page-pad); }
 

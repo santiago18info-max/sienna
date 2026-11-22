@@ -15,7 +15,7 @@
     visibility: hidden;
   }
   .nav.open { transform: translateX(0); visibility: visible; }
-  .nav a { font-family: var(--serif); font-size: 32px; text-transform: none; letter-spacing: 0; }
+  .nav a { font-family: var(--sans); font-weight: 300; font-size: 32px; text-transform: none; letter-spacing: -.02em; }
   .header-right { display: none; }
   .menu-toggle { display: flex; justify-self: end; align-items: center; gap: 10px; font-size: 9px; text-transform: uppercase; letter-spacing: .12em; }
 
