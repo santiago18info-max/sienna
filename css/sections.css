@@ -65,7 +65,8 @@
 .about { padding: 0 var(--page-pad) clamp(100px, 14vw, 190px); }
 .about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 9vw; align-items: center; }
 .about-image-wrap { position: relative; }
-.about-image { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: grayscale(100%); }
+/* La foto es horizontal: se recorta a 4:5 anclada a la izquierda, donde está la modelo */
+.about-image { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 0% 50%; }
 .image-caption {
   position: absolute; bottom: -24px; right: 0; font-size: 9px;
   letter-spacing: .12em; text-transform: uppercase; color: var(--gray);
