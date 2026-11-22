@@ -34,15 +34,6 @@
   position: absolute; bottom: 26px; right: var(--page-pad); z-index: 2;
   font-size: 9px; letter-spacing: .18em; color: white; mix-blend-mode: difference;
 }
-.hero-mark {
-  position: absolute; width: 100px; height: 100px; border-radius: 50%;
-  border: 1px solid rgba(148,128,187,.65); left: 47%; top: 18%;
-  transform: translate(-50%, -50%); z-index: 2; pointer-events: none;
-}
-.hero-mark::after {
-  content: ""; position: absolute; width: 13px; height: 13px; border-radius: 50%;
-  background: var(--lavender); top: 10px; right: 14px;
-}
 .scroll-note {
   position: absolute; left: var(--page-pad); bottom: 25px; display: flex;
   gap: 12px; align-items: center; font-size: 9px; letter-spacing: .16em;
