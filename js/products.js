@@ -12,10 +12,10 @@ window.SIENNA_PRODUCTS = [
   {
     tag: '01 / Pre-shampoo',
     title: 'Pre-Shampoo',
-    subtitle: 'Nombre e imagen provisorios',
+    subtitle: 'Tratamiento para cabello químicamente tratado',
     category: 'pre-shampoo',
     description: 'Descripción provisoria del pre-shampoo de la línea [peptide complex]. Reemplazar por la información definitiva del producto.',
-    image: 'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=900&q=85'
+    image: 'assets/img/products/pre-shampoo.jpg'
   },
   {
     tag: '02 / Shampoo',
