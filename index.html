@@ -26,7 +26,7 @@
 
   <!-- Estilos (en orden: base → componentes → secciones → responsive) -->
   <link rel="stylesheet" href="css/base.css?v=3">
-  <link rel="stylesheet" href="css/components.css?v=3">
+  <link rel="stylesheet" href="css/components.css?v=4">
   <link rel="stylesheet" href="css/sections.css?v=3">
   <link rel="stylesheet" href="css/responsive.css?v=3">
 </head>
@@ -165,14 +165,16 @@
       <div class="modal-text">
         <span class="eyebrow lavender">SIENNA / [peptide complex]</span>
         <h3 id="modalTitle">Producto</h3>
-        <p id="modalDescription">Descripción provisoria del producto.</p>
-        <p class="eyebrow">Imagen y descripción editables</p>
+        <span class="modal-heading">Función</span>
+        <p id="modalFunction"></p>
+        <span class="modal-heading">Ingredientes</span>
+        <ul class="modal-ingredients" id="modalIngredients"></ul>
       </div>
     </div>
   </div>
 
   <!-- Scripts: primero los datos, después la lógica -->
-  <script src="js/products.js?v=4"></script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/products.js?v=5"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

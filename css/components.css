@@ -81,7 +81,17 @@
 .modal-content img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; background: var(--paper); }
 .modal-text { align-self: center; }
 .modal-text h3 { font-family: var(--sans); font-size: 38px; font-weight: 400; line-height: 1; margin: 15px 0; }
-.modal-text p { font-size: 12px; line-height: 1.8; color: var(--gray); }
+.modal-text p { font-size: 12px; line-height: 1.8; color: var(--gray); margin: 6px 0 0; }
+.modal-heading {
+  display: block; margin-top: 22px; font-size: 9px; text-transform: uppercase;
+  letter-spacing: .16em; color: var(--violet);
+}
+.modal-ingredients { list-style: none; margin: 8px 0 0; padding: 0; border-top: 1px solid var(--line); }
+.modal-ingredients li {
+  font-family: var(--body); font-size: 12px; color: var(--gray);
+  padding: 7px 0; border-bottom: 1px solid var(--line);
+}
+.modal-content { max-height: 90vh; overflow-y: auto; }
 .modal-close { position: absolute; right: 16px; top: 12px; border: 0; background: none; font-size: 25px; cursor: pointer; }
 
 /* Footer */

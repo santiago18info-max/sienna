@@ -93,7 +93,8 @@
   /* ---------- 4. Modal ---------- */
   const modal = document.getElementById('productModal');
   const modalTitle = document.getElementById('modalTitle');
-  const modalDescription = document.getElementById('modalDescription');
+  const modalFunction = document.getElementById('modalFunction');
+  const modalIngredients = document.getElementById('modalIngredients');
   const modalImage = document.getElementById('modalImage');
   const modalClose = document.getElementById('modalClose');
   let lastTrigger = null;
@@ -101,7 +102,12 @@
   function openModal(product, trigger) {
     lastTrigger = trigger;
     modalTitle.textContent = product.title;
-    modalDescription.textContent = product.description;
+    modalFunction.textContent = product.funcion || '';
+    modalIngredients.replaceChildren(...(product.ingredients || []).map(name => {
+      const li = document.createElement('li');
+      li.textContent = name;
+      return li;
+    }));
     modalImage.src = product.image;
     modalImage.alt = product.title;
     modal.classList.add('open');
